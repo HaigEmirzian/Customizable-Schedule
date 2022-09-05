@@ -1,0 +1,141 @@
+<!--I pledge my honor that I have abided by the Stevens Honor System. -Haig Emirzian-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Table.css"/>
+        <script src="Buttons.js"></script>
+        <h1>Haig Emirzian's Schedule </h1>
+      </head>
+    <body>
+      <div>
+        <!--Color confirming button-->
+        <input type = "button" id = "confirm_color" onclick = "color_check()" value = "Confirm">
+      </div>
+      <!--Classes/JS-->
+      <main>
+      <div>
+            <form>
+                <input type = "checkbox" id = "PEP111_verify" onclick = "class_check()" checked = "checked">
+                <label for = "PEP111">PEP111 Mechanics</label>
+                <input type = "color" id= "PEP111_color" value = "#FF0000"><br>
+                <input type = "checkbox" id = "CS115_verify" onclick = "class_check()" checked = "checked">
+                <label for = "CS115">CS115 Intro to Computer Science</label>
+                <input type = "color" id = "CS115_color" value = "#FF7E26"><br>
+                <input type = "checkbox" id = "MA124_verify" onclick = "class_check()" checked = "checked">
+                <label for = "MA124">MA124 Calculus of Two Variables</label>
+                <input type = "color" id = "MA124_color" value = "#FCFF2C"><br>
+                <input type = "checkbox" id = "CAL105_verify" onclick = "class_check()" checked = "checked">
+                <label for = "CAL105">CAL 105 Knowledge, Nature, Culture</label>
+                <input type = "color" id = "CAL105_color" value = "#60FB29"><br>
+                <input type = "checkbox" id="CS146_verify" onclick="class_check()" checked = "checked">
+                <label for = "CS146">CS146 Intro to Web Prog. & Web Dev</label>
+                <input type = "color" id = "CS146_color" value = "#7434eb"><br>
+              </form>            
+        </div>
+            <br>
+        <div>
+          <!--table layout-->
+            <table id = "schedule">
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                  </tr>
+                  <tr>
+                    <th>8AM</th>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr id = "BC_MA124">
+                    <th>9AM</th>
+                    <td>MA124</td>
+                    <td> </td>
+                    <td>MA124</td>
+                    <td> </td>
+                    <td>MA124</td>
+                  </tr>
+                  <tr id = "BC_CS115">
+                    <th>10AM</th>
+                    <td>CS115</td>
+                    <td rowspan="2">PEP111</td>
+                    <td>CS115</td>
+                    <td rowspan="2">PEP111</td>
+                    <td>CS115</td>
+                  </tr>
+                  <tr>
+                  <th>11AM</th>
+                  </tr>
+                  <tr id = "BC_PEP111">
+                    <th>12PM</th>
+                    <td>PEP111</td>
+                    <td rowspan="2">CAL105</td>
+                    <td> </td>
+                    <td rowspan="2">CAL105</td>
+                    <td>PEP111</td>
+                  </tr>
+                  <tr id="BC_CAL105">
+                    <th>1PM</th>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <th>2PM</th>
+                    <td> </td>
+                    <td>MA124</td>
+                    <td> </td>
+                    <td>MA124</td>
+                  </tr>
+                  <tr id = "BC_CS146">
+                    <th>3PM</th>
+                    <td> </td>
+                    <td rowspan="2">CS146</td>
+                    <td>&nbsp</td>
+                    <td rowspan="2">CS146</td>
+                  </tr>
+                  <tr>
+                    <th>4PM</th>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <th>5PM</th>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <th>6PM</th>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <th>7PM</th>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <th>8PM</th>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+            </table>
+        </div>
+        </main>
+      </body>
+</html>
