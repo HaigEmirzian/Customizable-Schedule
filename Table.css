@@ -1,0 +1,24 @@
+table {
+    width: 1vh;
+    border-spacing: 5vh;
+}
+
+body {
+    color: black;
+    background-image: url(https://bit.ly/3Ev2iPT);
+    background-size: cover;
+    background-position: top;
+}
+
+tr {
+    border: 1vh solid burlywood;
+}
+
+th {
+    text-align: left;
+}
+
+table, th, td {
+    border: 1vh solid burlywood;
+    border-collapse: collapse;
+}
